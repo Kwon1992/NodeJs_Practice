@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<header>
+    <h1>Blog</h1>
+</header>
+<article>
+    <% for(let datum of data){%>
+    <div class="post">
+        <h3 class="postTitle"><%= datum.title%></h3>
+        <p class="postDay"><%= datum.date%></p>
+        <p><%= datum.content%></p>
+    </div>
+    <%}%>
+</article>
+</body>
+</html>
